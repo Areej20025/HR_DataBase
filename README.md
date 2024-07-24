@@ -51,3 +51,11 @@ BEGIN
     SET employee_status = 'Updated'
     WHERE id IN (SELECT id FROM inserted);
 END;
+```
+## Data Security and Permissions
+
+This section covers how to manage database security and user permissions.
+```sql
+-- Example of creating a user and granting permissions
+CREATE USER hr_user WITH PASSWORD = 'SecurePassword';
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA dbo TO hr_user;
