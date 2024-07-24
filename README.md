@@ -22,7 +22,7 @@ Run the HR_System.sql script on your SQL Server to create the database and all t
 
 The Entity-Relationship (ER) diagram below illustrates the structure of the HR System database. It shows the tables, their columns, and the relationships between them:
 
-![ER Diagram](ER_Diagram.png)
+![ER Diagram](https://github.com/Areej20025/HR_DataBase/blob/main/HR%20Entity%20Relationship%20Diagram.png)
 
 ## Advanced SQL Queries
 
