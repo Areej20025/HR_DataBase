@@ -46,9 +46,9 @@ CREATE TABLE vacations (
     vacation_type NVARCHAR(100),
     start_date DATE,
     end_date DATE,
-    department_id INT,
+    employee_id INT,
     vacation_status NVARCHAR(50),
-    FOREIGN KEY (department_id) REFERENCES departments(id)
+    FOREIGN KEY (employee_id) REFERENCES employee(id)
 );
 
 -- Create the loans table
