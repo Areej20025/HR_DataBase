@@ -23,7 +23,7 @@ This file (`Database_Schema_Creation.sql`) contains the SQL scripts necessary to
 
 The diagram below represents the Entity Relationship Diagram (ERD) for the HR Management Database. It visualizes the relationships between various entities (tables) within the database, illustrating how they are interconnected.
 
-![HR Entity Relationship Diagram](path/to/your/image/HR_Entity_Relationship_Diagram.png)
+![HR Entity Relationship Diagram](HR_Entity_Relationship_Diagram.png)
 
 ### Key Components:
 
