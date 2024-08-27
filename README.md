@@ -5,18 +5,50 @@ This repository contains a comprehensive SQL-based project designed to manage th
 ## Table of Contents
 
 1. [Database Schema Creation](#database-schema-creation)
-2. [Data Analysis Queries](#data-analysis-queries)
-3. [DDL and DML Commands](#ddl-and-dml-commands)
-4. [Indexing Queries](#indexing-queries)
-5. [SQL Views Creation](#sql-views-creation)
-6. [Database Encryption and Decryption](#database-encryption-and-decryption)
-7. [User Role Management](#user-role-management)
-8. [SQLServer Backups](#sqlserver-backups)
-9. [HR Entity Relationship Diagram (ERD)](#hr-entity-relationship-diagram-erd)
+2. [HR Entity Relationship Diagram (ERD)](#hr-entity-relationship-diagram-erd)
+3. [Data Analysis Queries](#data-analysis-queries)
+4. [DDL and DML Commands](#ddl-and-dml-commands)
+5. [Indexing Queries](#indexing-queries)
+6. [SQL Views Creation](#sql-views-creation)
+7. [Database Encryption and Decryption](#database-encryption-and-decryption)
+8. [User Role Management](#user-role-management)
+9. [SQLServer Backups](#sqlserver-backups)
 
 ## Database Schema Creation
 
 This file (`Database_Schema_Creation.sql`) contains the SQL scripts necessary to create the foundational structure of the HR database. It includes the creation of tables such as `employees`, `departments`, `positions`, and others, along with primary keys, foreign keys, and constraints.
+
+
+## HR Entity Relationship Diagram (ERD)
+
+The diagram below represents the Entity Relationship Diagram (ERD) for the HR Management Database. It visualizes the relationships between various entities (tables) within the database, illustrating how they are interconnected.
+
+![HR Entity Relationship Diagram](path/to/your/image/HR_Entity_Relationship_Diagram.png)
+
+### Key Components:
+
+- **employees**: This central table stores information about employees, including their name, contact details, position, department, and status.
+  - Connected to multiple tables representing various aspects of employee management (e.g., payroll, attendance, loans).
+  
+- **departments**: Holds details about the different departments within the organization, including the department name, location, and contact information.
+  
+- **positions**: This table stores the various job titles within the company, along with descriptions.
+  
+- **payroll**: Contains payroll details such as gross salary, income tax, and net salary for employees.
+  
+- **attendance**: Tracks employee attendance, including check-in and check-out times.
+  
+- **vacations**: Stores records of employee vacations, including vacation type, start and end dates, and approval status.
+  
+- **loans**: Manages details of loans given to employees, including loan amounts, dates, and statuses.
+  
+- **overtime**: Tracks overtime hours worked by employees, including the date and hours worked.
+  
+- **bonus**: Records bonuses awarded to employees, including the amount, date, and status of each bonus.
+
+Each table is linked to the `employees` table via foreign keys, establishing a clear and well-defined structure that supports comprehensive HR management and reporting.
+
+
 
 ## Data Analysis Queries
 
@@ -46,9 +78,6 @@ This file (`User_Role_Management.sql`) contains scripts for managing user roles 
 
 The `SQLServer_Backups.sql` file provides scripts for performing different types of backups for the HR database, including full backups, differential backups, and transaction log backups. These scripts ensure that the database can be restored to a consistent state in case of data loss.
 
-## HR Entity Relationship Diagram (ERD)
-
-The `HR_Entity_Relationship_Diagram.png` file is a visual representation of the database structure, showcasing the relationships between different tables within the HR database. It provides a clear view of how data is interconnected.
 
 ## Getting Started
 
@@ -64,6 +93,3 @@ To get started with this project:
 
 If you have suggestions for improvements or encounter any issues, feel free to create a pull request or raise an issue in this repository. Contributions are welcome!
 
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
